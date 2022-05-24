@@ -308,6 +308,35 @@ execute "hi WildMenu"
 		\ "guifg=" . s:black.gui "guibg=" . s:blue.gui "gui=NONE"
 		\ "ctermfg=" . s:black.cterm "ctermbg=" . s:blue.cterm "cterm=NONE"
 
+" LSP related
+execute "hi DiagnosticError"
+		\ "guifg=" . s:error_red.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:error_red.cterm "ctermbg=NONE cterm=bold"
+execute "hi DiagnosticWarn"
+		\ "guifg=" . s:purple.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:purple.cterm "ctermbg=NONE cterm=bold"
+execute "hi DiagnosticInfo"
+		\ "guifg=" . s:cyan.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:cyan.cterm "ctermbg=NONE cterm=bold"
+execute "hi DiagnosticHint"
+		\ "guifg=" . s:comment_grey.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:comment_grey.cterm "ctermbg=NONE cterm=bold"
+execute "hi NormalFloat"
+		\ "guifg=" . s:comment_grey.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:comment_grey.cterm "ctermbg=NONE cterm=bold"
+execute "hi FloatBorder"
+		\ "guifg=" . s:comment_grey.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:comment_grey.cterm "ctermbg=NONE cterm=bold"
+execute "hi FloatBorderDark"
+		\ "guifg=" . s:comment_grey.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:comment_grey.cterm "ctermbg=NONE cterm=bold"
+execute "hi FloatShadow"
+		\ "guifg=" . s:comment_grey.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:comment_grey.cterm "ctermbg=NONE cterm=bold"
+execute "hi FloatShadowThrough"
+		\ "guifg=" . s:comment_grey.gui "guibg=NONE gui=bold"
+		\ "ctermfg=" . s:comment_grey.cterm "ctermbg=NONE cterm=bold"
+
 " Termdebug highlighting for Vim 8.1+
 " See `:h hl-debugPC` and `:h hl-debugBreakpoint`.
 execute "hi debugPC"
@@ -1246,7 +1275,6 @@ execute "hi diffRemoved"
 		\ "ctermfg=" . s:red.cterm "ctermbg=NONE cterm=NONE"
 
 " Git Highlighting
-
 execute "hi gitcommitComment"
 		\ "guifg=" . s:comment_grey.gui "guibg=NONE gui=NONE"
 		\ "ctermfg=" . s:comment_grey.cterm "ctermbg=NONE cterm=NONE"
